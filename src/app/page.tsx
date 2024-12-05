@@ -6,7 +6,7 @@ import HeroSection from '@/components/HeroSection';
 function page() {
   return (
     <div>
-      <section className=''  >
+      <section className='py-10'  >
         <HeroSection />
       </section>
 
