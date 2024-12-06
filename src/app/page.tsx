@@ -2,8 +2,9 @@
 import React from 'react'
 import BannerBottom from '@/components/BannerBottom'
 import HeroSection from '@/components/HeroSection';
-
+import Cards from '@/components/Cards';
 import Navbar from '@/components/NavbarItem';
+import LogoClouds from '@/components/LogoClouds';
 
 function page() {
   return (
@@ -18,7 +19,9 @@ function page() {
       <section className='absolute' >
         <BannerBottom />
       </section>
-
+      
+      <LogoClouds/>
+      <Cards/>
     </>
   )
 }
