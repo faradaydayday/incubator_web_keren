@@ -10,6 +10,7 @@ import LogoClouds from '@/components/LogoClouds';
 import Cards from '@/components/Cards';
 import About from '@/components/About';
 import LoadingAnimation from '@/components/LoadingAnimate';
+import Footer from '@/components/Footer';
 import AboutSection from '@/components/AboutSection';
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,6 +50,10 @@ function Page() {
           <LogoClouds />
           <Cards />
           <About />
+
+          <section>
+          <Footer/>
+          </section>
         </div>
       )}
     </>
