@@ -100,7 +100,7 @@ const Navbar = () => {
             {/* Tombol Join Us */}
             <Link href='https://ppdb.telkomschools.sch.id/'>
             <button
-              className="w-full max-w-xs py-3 bg-red-500 text-white rounded-full text-lg font-medium hover:bg-red-600 shadow-md"
+              className="w-full max-w-xs px-32 py-3 bg-red-500 text-white rounded-full text-lg font-medium hover:bg-red-600 shadow-md"
               onClick={() => setMobileMenuOpen(false)}
             >
               Join Us
