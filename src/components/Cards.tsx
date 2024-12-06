@@ -17,8 +17,8 @@ function Cards() {
             Adalah sebuah merk atau brand yang sering dipakai pada jaringan yang memiliki skala luas dan besar seperti WAN atau Wide Area Network. Memiliki kegunaan untuk mengendalikan atau melakukan pengaturan LAN yang ada.
           </p>
           <div className="pt-4 flex justify-center">
-            <button className="w-36 h-10 text-blue-500 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
-              Masukin
+            <button className="w-36 h-10 text-red-600 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
+              Telusuri
             </button>
           </div>
         </div>
@@ -29,8 +29,8 @@ function Cards() {
             MySQL adalah perangkat lunak sistem manajemen basis data (database management system) yang bersifat open source dan gratis. MySQL digunakan untuk mengakses, mengubah, dan memanipulasi data dalam skala relasional.
           </p>
           <div className="pt-4 flex justify-center">
-            <button className="w-36 h-10 text-blue-500 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
-            Masukin
+            <button className="w-36 h-10 text-red-600 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
+            Telusuri
             </button>
           </div>
         </div>
@@ -41,20 +41,8 @@ function Cards() {
             Laravel merupakan framework PHP yang open-source dan berisi banyak modul dasar untuk mengoptimalkan kinerja PHP dalam pengembangan aplikasi web.
           </p>
           <div className="pt-4 flex justify-center">
-            <button className="w-36 h-10 text-blue-500 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
-            Masukin
-            </button>
-          </div>
-        </div>
-        <div className="m-4 bg-white w-[300px] md:w-[400px] lg:w-[500px] rounded-xl hover:scale-110 duration-700 p-4 shadow-lg">
-          <Image alt="Icon Tailwind" src={IconTailwind} width={44} height={44} />
-          <h4 className="py-2 mt-2 font-bold">Tailwind</h4>
-          <p className="text-sm leading-7 text-gray-500">
-            Tailwind CSS adalah framework CSS yang membantu pengembang untuk membuat tampilan website yang modern dan responsif. Tailwind CSS memiliki beberapa fitur unggulan.
-          </p>
-          <div className="pt-4 flex justify-center">
-            <button className="w-36 h-10 text-blue-500 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
-              Button
+            <button className="w-36 h-10 text-red-600 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
+            Telusuri
             </button>
           </div>
         </div>
@@ -65,8 +53,8 @@ function Cards() {
             MikroTik adalah perangkat lunak dan sistem operasi yang digunakan untuk mengelola jaringan komputer. MikroTik dikembangkan oleh perusahaan MikroTikls SIA yang berlokasi di Riga, Latvia.
           </p>
           <div className="pt-4 flex justify-center">
-            <button className="w-36 h-10 text-blue-500 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
-              Button
+            <button className="w-36 h-10 text-red-600 font-semibold rounded-md bg-transparent hover:scale-90 duration-500">
+              Telusuri
             </button>
           </div>
         </div>

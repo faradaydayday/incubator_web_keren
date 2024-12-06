@@ -5,6 +5,8 @@ import HeroSection from '@/components/HeroSection';
 import Cards from '@/components/Cards';
 import Navbar from '@/components/NavbarItem';
 import LogoClouds from '@/components/LogoClouds';
+import About from '@/components/About'
+
 
 function page() {
   return (
@@ -22,6 +24,7 @@ function page() {
       
       <LogoClouds/>
       <Cards/>
+      <About/>
     </>
   )
 }
