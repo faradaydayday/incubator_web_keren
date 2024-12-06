@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Icon from '../app/Assets/Image/iconIncu.png';
 import ShinyButton from './ui/shiny-button';
 
+
 function HeroSection() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6 bg-white text-gray-800 relative overflow-hidden">
@@ -31,6 +32,7 @@ function HeroSection() {
           <h1 className="text-xl font-semibold">Incubator</h1>
         </div>
 
+
         {/* Heading and Description */}
         <div className="text-center max-w-3xl mx-auto px-4">
           <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold leading-tight text-gray-800">
@@ -52,6 +54,7 @@ function HeroSection() {
           <ShinyButton>Media Sosial</ShinyButton>
         </Link>
       </div>
+
     </div>
   );
 }
