@@ -53,7 +53,7 @@ function HeroSection() {
 
         {/* Button */}
         <Link href="https://linktr.ee/incubator_stelkmks">
-          <ShinyButton className='py-2 px-5'>Media Sosial</ShinyButton>
+          <ShinyButton className='py-3 px-8'>Media Sosial</ShinyButton>
         </Link>
       </div>
 
