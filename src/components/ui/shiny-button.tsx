@@ -47,7 +47,7 @@ const ShinyButton = React.forwardRef<HTMLButtonElement, ShinyButtonProps>(
         )}
         style={{
           background:
-            "radial-gradient(circle at 50% 0%, rgba(255, 69, 58, 0.1) 0%, transparent 60%)",
+            "radial-gradient(circle at 50% 0%, rgba(255, 69, 58, 0.1) 0%, transparent 100%)",
         }}
       >
         <span
