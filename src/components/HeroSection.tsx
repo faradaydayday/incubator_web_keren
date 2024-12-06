@@ -3,35 +3,55 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '../app/Assets/Image/iconIncu.png';
 import ShinyButton from './ui/shiny-button';
+
 function HeroSection() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen px-6 bg-white text-gray-800 relative overflow-hidden">
 
-      <div className="w-32 mb-8 text-center">
-        <Image
-          src={Icon}
-          alt="Icon Incubator"
-          style={{
-            filter: "drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.8))"
-          }}
-        />
-        <h1 className=" text-lg font-semibold text-gray-800">Incubator</h1>
+      {/* Background Decorative */}
+      <div className="absolute inset-0 z-0 flex justify-center items-center">
+        <div className="w-96 h-96 bg-gradient-to-br from-gray-200 to-gray-400 rounded-full blur-3xl opacity-40"></div>
       </div>
 
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center space-y-6">
 
-      <h1 className="text-4xl font-bold text-center mb-4">
-        Selamat Datang di Incubator
-      </h1>
+        {/* Icon and Title */}
+        <div className="flex flex-col items-center">
+          <div className="relative w-32 h-32 ">
+            <Image
+              src={Icon}
+              alt="Icon Incubator"
 
-      <p className="text-xl text-center mb-8">
-        Incubator adalah salah satu ekskul yang ada di SMK Telkom Makassar.
-        <br />
-        Scroll untuk tahu lebih banyak.
-      </p>
+              style={{
+                filter: "drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5))"
+              }}
+            />
+          </div>
+          <h1 className="text-xl font-semibold">Incubator</h1>
+        </div>
 
-      <Link href="https://linktr.ee/incubator_stelkmks">
-        <ShinyButton>Media Sosial</ShinyButton>
-      </Link>
+        {/* Heading and Description */}
+        <div className="text-center max-w-3xl mx-auto px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold leading-tight text-gray-800">
+            Empowering  <br className="sm:hidden" />
+            <span className="block sm:inline lg:mr-2">Digital Bridges</span>
+            <span className="block sm:inline md:inline">Future <span className='md:hidden'>Technological </span></span>
+          </h1>
+          <p className="text-sm md:text-lg mt-4 text-gray-600">
+            Incubator adalah gerbang Anda untuk menguasai <strong>software engineering</strong>
+            dan menjadi <strong>network administrator</strong> yang terampil. Bergabunglah dengan kami dan bentuk masa depan teknologi.
+          </p>
+        </div>
+
+
+
+
+        {/* Button */}
+        <Link href="https://linktr.ee/incubator_stelkmks">
+          <ShinyButton>Media Sosial</ShinyButton>
+        </Link>
+      </div>
     </div>
   );
 }

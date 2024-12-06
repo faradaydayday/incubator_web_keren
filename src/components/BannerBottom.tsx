@@ -1,6 +1,6 @@
-
-
+import Link from 'next/link';
 import React, { useState } from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const BannerBottom: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -12,11 +12,18 @@ const BannerBottom: React.FC = () => {
   return (
     <>
       {isVisible && (
-        <div className="fixed bottom-0 w-full px-4 sm:px-8 md:px-12 lg:px-16  mb-6 z-50">
-          <div className="bg-gray-800 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-lg flex items-center justify-between max-w-7xl mx-auto">
-            <span className="text-xs sm:text-sm md:text-base pr-2 sm:pr-4">
-              Yuk Join Di <span className='text-red-400' ><a href="smktelkom-mks.sch.id">SMK TELKOM MAKASSAR</a></span> untuk hal menarik laninya yuk
+        <div className="fixed bottom-0 left-0 right-0 transform lg:max-w-7xl lg:left-1/2 lg:-translate-x-1/2 lg:px-16 lg:mb-6 z-50 sm:mb-3">
+          <div className="bg-gray-800 text-white py-3 sm:py-4 px-4 sm:px-6 rounded-none sm:rounded-lg flex items-center justify-between w-full">
+            <span className="text-xs sm:text-sm md:text-base pr-2 sm:pr-4 font-semibold">
+              Ingin Hal Menarik Lainya
+              <span className="text-red-500 inline-flex items-center ml-1">
+                <Link href="https://ppdb.telkomschools.sch.id/welcome">
+                  Yuk Join Di SMK TELKOM MAKASSAR
+                </Link>
+                <ArrowRight className="ml-1" />
+              </span>
             </span>
+
             <button
               className="text-white hover:text-gray-300 focus:outline-none flex-shrink-0"
               onClick={handleCloseClick}
@@ -39,6 +46,7 @@ const BannerBottom: React.FC = () => {
             </button>
           </div>
         </div>
+
       )}
     </>
   );

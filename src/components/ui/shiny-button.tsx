@@ -42,15 +42,19 @@ const ShinyButton = React.forwardRef<HTMLButtonElement, ShinyButtonProps>(
         {...animationProps}
         {...props}
         className={cn(
-          "relative rounded-lg px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,hsl(var(--primary)/10%)_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_hsl(var(--primary)/10%)]",
+          "relative rounded-lg px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow-lg",
           className,
         )}
+        style={{
+          background:
+            "radial-gradient(circle at 50% 0%, rgba(255, 69, 58, 0.1) 0%, transparent 60%)",
+        }}
       >
         <span
-          className="relative block size-full text-sm uppercase tracking-wide text-[rgb(0,0,0,65%)] dark:font-light dark:text-[rgb(255,255,255,90%)]"
+          className="relative block size-full text-sm uppercase tracking-wide text-[rgba(6,5,5,0.8)] dark:font-light"
           style={{
             maskImage:
-              "linear-gradient(-75deg,hsl(var(--primary)) calc(var(--x) + 20%),transparent calc(var(--x) + 30%),hsl(var(--primary)) calc(var(--x) + 100%))",
+              "linear-gradient(-75deg, rgba(255, 69, 58, 1) calc(var(--x) + 20%), transparent calc(var(--x) + 30%), rgba(255, 69, 58, 1) calc(var(--x) + 100%))",
           }}
         >
           {children}
@@ -60,7 +64,7 @@ const ShinyButton = React.forwardRef<HTMLButtonElement, ShinyButtonProps>(
             mask: "linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box,linear-gradient(rgb(0,0,0), rgb(0,0,0))",
             maskComposite: "exclude",
           }}
-          className="absolute inset-0 z-10 block rounded-[inherit] bg-[linear-gradient(-75deg,hsl(var(--primary)/10%)_calc(var(--x)+20%),hsl(var(--primary)/50%)_calc(var(--x)+25%),hsl(var(--primary)/10%)_calc(var(--x)+100%))] p-px"
+          className="absolute inset-0 z-10 block rounded-[inherit] bg-[linear-gradient(-75deg,rgba(255,69,58,0.1)_calc(var(--x)+20%),rgba(255,69,58,0.5)_calc(var(--x)+25%),rgba(255,69,58,0.1)_calc(var(--x)+100%))] p-px"
         ></span>
       </motion.button>
     );
