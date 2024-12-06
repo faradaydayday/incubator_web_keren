@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '../app/Assets/Image/iconIncu.png';
-import ShinyButton from './ui/shiny-button';
+
 function HeroSection() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
@@ -30,7 +30,7 @@ function HeroSection() {
       </p>
 
       <Link href="https://linktr.ee/incubator_stelkmks">
-        <ShinyButton>Media Sosial</ShinyButton>
+      
       </Link>
     </div>
   );
