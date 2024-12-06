@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AnimatedGradientText from "./ui/animated-gradient-text";
 import Incu from "@/app/Assets/Image/logo-telkom-schools.png"
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 const Navbar = () => {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -65,9 +66,11 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
+            
             <div className="hidden lg:flex space-x-8">
-
+              <Link href='https://ppdb.telkomschools.sch.id/'>
               <AnimatedGradientText> 😎 Join Us</AnimatedGradientText>
+              </Link>
             </div>
           </div>
         </div>
@@ -95,12 +98,14 @@ const Navbar = () => {
             </div>
 
             {/* Tombol Join Us */}
+            <Link href='https://ppdb.telkomschools.sch.id/'>
             <button
               className="w-full max-w-xs py-3 bg-red-500 text-white rounded-full text-lg font-medium hover:bg-red-600 shadow-md"
               onClick={() => setMobileMenuOpen(false)}
             >
               Join Us
             </button>
+            </Link>
           </div>
         </motion.div>
       )}

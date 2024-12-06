@@ -3,15 +3,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import iconIncu from "@/app/Assets/Image/pp.jpg";
 
-const LoadingAnimation = ({ onComplete }) => {
+const LoadingAnimation = ({ onComplete = () => {} }) => {
   const [loadingStage, setLoadingStage] = useState('initial');
 
   useEffect(() => {
     const stages = [
       { stage: 'logo', delay: 500 }, // Logo muncul setelah 0.5 detik
-      { stage: 'text', delay: 1500 }, // Teks muncul setelah 1.5 detik
+      { stage: 'text', delay: 2500 }, // Teks muncul setelah 1.5 detik
       { stage: 'complete', delay: 3000 }, // Loading selesai setelah 3 detik
-      { stage: 'exit', delay: 4500 }, // Animasi keluar selesai setelah 4.5 detik
+      { stage: 'exit', delay: 6500 }, // Animasi keluar selesai setelah 4.5 detik
     ];
 
     const timers = stages.map((item) =>
