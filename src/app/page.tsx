@@ -3,7 +3,7 @@ import React, { useState, } from 'react';
 import Navbar from '@/components/NavbarItem';
 import HeroSection from '@/components/HeroSection';
 import ImageHeroCard from '@/components/ImageHeroCard';
-import Incubator from '@/components/Incubator'
+// import Incubator from '@/components/Incubator'
 import { TextRevealDemo } from '@/components/TextReveal';
 import BannerBottom from '@/components/BannerBottom';
 import LogoClouds from '@/components/LogoClouds';
@@ -21,6 +21,11 @@ function Page() {
 
   return (
     <>
+      {isLoading && (
+        <LoadingAnimation
+          onComplete={handleLoadingComplete}
+        />
+      )}
       {!isLoading && (
         <div className="animate-fade-in">
           <div>
