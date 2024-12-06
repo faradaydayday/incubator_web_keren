@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Webeskul from '@/app/Assets/Image/WebEkskul.jpg';
+import gambar2 from '@/app/Assets/Image/pertemuan 3.jpg'
+import gambar3 from '@/app/Assets/Image/gambar4.jpg'
+import gambar4 from '@/app/Assets/Image/NetworkBelajar.jpg'
+import gambar5 from '@/app/Assets/Image/NetworkEkskul.jpg'
 
 function ImageHeroCard() {
   const [scrollY, setScrollY] = useState(0);
@@ -96,10 +100,10 @@ function ImageHeroCard() {
     return {
       cards: [
         { image: Webeskul },
-        { image: Webeskul },
-        { image: Webeskul },
-        { image: Webeskul },
-        { image: Webeskul },
+        { image: gambar2 },
+        { image: gambar3 },
+        { image: gambar4 },
+        { image: gambar5 },
       ],
       renderStrategy: () => ({
         width: 'w-[18rem]',

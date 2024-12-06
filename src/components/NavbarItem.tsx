@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AnimatedGradientText from "./ui/animated-gradient-text";
-import Incu from "@/app/Assets/Image/iconIncu.png"
+import Incu from "@/app/Assets/Image/logo-telkom-schools.png"
 import { motion } from "framer-motion";
 import Image from "next/image";
 const Navbar = () => {
@@ -89,9 +89,9 @@ const Navbar = () => {
               <Image
                 src={Incu}
                 alt="logo incubator"
-                className="w-12 h-12 object-contain" // Ukuran gambar kecil
+                className="w-12 h-12 mb-4 object-contain" // Ukuran gambar kecil
               />
-              <h2 className="text-xl font-bold text-gray-800">INCUBATORS</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-4">SMK Telkom Makassar</h2>
             </div>
 
             {/* Tombol Join Us */}
