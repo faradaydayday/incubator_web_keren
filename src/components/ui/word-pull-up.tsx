@@ -1,11 +1,11 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-
 import { cn } from "@/lib/utils";
+import React from "react";
 
 interface WordPullUpProps {
-  words: string;
+  children: React.ReactNode; // Accepts JSX as children
   delayMultiple?: number;
   wrapperFramerProps?: Variants;
   framerProps?: Variants;
@@ -13,7 +13,7 @@ interface WordPullUpProps {
 }
 
 export default function WordPullUp({
-  words,
+  children,
   wrapperFramerProps = {
     hidden: { opacity: 0 },
     show: {
@@ -23,31 +23,16 @@ export default function WordPullUp({
       },
     },
   },
-  framerProps = {
-    hidden: { y: 20, opacity: 0 },
-    show: { y: 0, opacity: 1 },
-  },
   className,
 }: WordPullUpProps) {
   return (
-    <motion.h1
+    <motion.div
       variants={wrapperFramerProps}
       initial="hidden"
       animate="show"
-      className={cn(
-        "font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm",
-        className,
-      )}
+      className={cn(className)}
     >
-      {words.split(" ").map((word, i) => (
-        <motion.span
-          key={i}
-          variants={framerProps}
-          style={{ display: "inline-block", paddingRight: "8px" }}
-        >
-          {word === "" ? <span>&nbsp;</span> : word}
-        </motion.span>
-      ))}
-    </motion.h1>
+      {children}
+    </motion.div>
   );
 }
