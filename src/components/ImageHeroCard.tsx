@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Webeskul from '@/app/Assets/Image/WebEkskul.jpg';
 
+
 function ImageHeroCard() {
   const [scrollY, setScrollY] = useState(0);
   const [screenWidth, setScreenWidth] = useState(0);
