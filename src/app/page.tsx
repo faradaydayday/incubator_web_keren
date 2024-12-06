@@ -9,6 +9,7 @@ import About from '@/components/About'
 import { AnimatedBeamDemo } from '@/components/AnimatedBeam';
 import { TextRevealDemo } from '@/components/TextReveal';
 import ImageHeroCard from '@/components/ImageHeroCard';
+import Incubator from '@/components/Incubator'
 
 function page() {
   return (
@@ -26,14 +27,14 @@ function page() {
         <TextRevealDemo />
       </section>
 
+      <Incubator/>
+      
       <section className='absolute' >
         <BannerBottom />
       </section>
       <LogoClouds/>
       <Cards/>
       <About/>
-      <LogoClouds />
-      <Cards />
     </>
   )
 }

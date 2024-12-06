@@ -1,4 +1,14 @@
 const posts = [
+  {
+    id: 6,
+    title: 'Apa Itu Incubator?',
+    href: '#',
+    description:
+      'Incubator merupakan salah satu Ekskul yang ada di Sekolah SMK Telkom Makassar, semua divisi dalam Ekskul ini Berfokus pada pelajaran Jurusan IT , dengan menjadi Member Incubator kalian bisa menjadi Web Developer untuk Lulusan divisi Web dan menjadi Network Engineer untuk divisi Networking',
+    date: 'Des 06, 2024',
+    datetime: '2020-03-16',
+    category: { title: 'Incubator', href: '#' },
+  },
     {
       id: 1,
       title: 'Apa itu Website?',
@@ -42,16 +52,6 @@ const posts = [
     {
       id: 5,
       title: 'Networking Ngapain Aja?',
-      href: '#',
-      description:
-        'Sebagai Network Engineer, Anda akan bekerja dalam tim infrastruktur IT. Diharapkan Anda dapat menggunakan pengetahuan dan pengalaman yang Anda miliki untuk membangun, mengembangkan, dan mengoperasikan perangkat jaringan yang ada. Tanggung jawab Anda untuk memastikan layanan jaringan berjalan dengan baik.',
-      date: 'Des 06, 2024',
-      datetime: '2020-03-16',
-      category: { title: 'Divisi Networking', href: '#' },
-    },
-    {
-      id: 6,
-      title: 'Network Engineer?',
       href: '#',
       description:
         'Sebagai Network Engineer, Anda akan bekerja dalam tim infrastruktur IT. Diharapkan Anda dapat menggunakan pengetahuan dan pengalaman yang Anda miliki untuk membangun, mengembangkan, dan mengoperasikan perangkat jaringan yang ada. Tanggung jawab Anda untuk memastikan layanan jaringan berjalan dengan baik.',
