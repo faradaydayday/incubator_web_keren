@@ -3,6 +3,8 @@
 import React from 'react'
 import BannerBottom from '@/components/BannerBottom'
 import HeroSection from '@/components/HeroSection';
+
+
 function page() {
   return (
     <div>
@@ -13,6 +15,7 @@ function page() {
       <section className='absolute' >
         <BannerBottom />
       </section>
+     
     </div>
   )
 }
