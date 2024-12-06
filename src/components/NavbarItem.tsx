@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AnimatedGradientText from "./ui/animated-gradient-text";
 import Incu from "@/app/Assets/Image/iconIncu.png"
+import { motion } from "framer-motion";
 import Image from "next/image";
 const Navbar = () => {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -45,15 +46,21 @@ const Navbar = () => {
             {/* Burger Button */}
             <div className="lg:hidden">
               <button
-                className="text-gray-900 focus:outline-none"
+                className="block lg:hidden focus:outline-none"
                 onClick={toggleMobileMenu}
               >
-                <span className="sr-only">Open Menu</span>
-                <div className="space-y-2">
-                  <div className="w-6 h-0.5 bg-gray-900"></div>
-                  <div className="w-6 h-0.5 bg-gray-900"></div>
-                  <div className="w-6 h-0.5 bg-gray-900"></div>
-                </div>
+                <span
+                  className={` bg-black block transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm ${mobileMenuOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+                    }`}
+                ></span>
+                <span
+                  className={`bg-black block transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm my-1 ${mobileMenuOpen ? "opacity-0" : "opacity-100"
+                    }`}
+                ></span>
+                <span
+                  className={`bg-black block transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : "translate-y-0.5"
+                    }`}
+                ></span>
               </button>
             </div>
 
@@ -66,11 +73,15 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+
+
       {mobileMenuOpen && (
-        <div
-          className={`fixed bottom-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-2xl rounded-t-lg transition-transform duration-500 ease-out ${mobileMenuOpen ? "translate-y-0" : "translate-y-full"
-            }`}
+        <motion.div
+          className="fixed bottom-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-2xl rounded-t-lg"
+          initial={{ opacity: 0, y: "100%" }}  // Mulai dengan opacity 0 dan di bawah layar
+          animate={{ opacity: 1, y: 0 }}       // Ketika muncul, opacity 1 dan posisi di atas
+          exit={{ opacity: 0, y: "100%" }}    // Ketika keluar, opacity 0 dan posisi di bawah
+          transition={{ duration: 0.5, ease: "easeInOut" }}  // Durasi 500ms dan easing
         >
           <div className="flex flex-col items-center space-y-4 py-6 px-4">
             {/* Logo dan Teks */}
@@ -91,9 +102,10 @@ const Navbar = () => {
               Join Us
             </button>
           </div>
-
-        </div>
+        </motion.div>
       )}
+
+
 
     </>
   );

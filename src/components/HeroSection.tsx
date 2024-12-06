@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Icon from '../app/Assets/Image/iconIncu.png';
 import ShinyButton from './ui/shiny-button';
-
+import WordPullUp from './ui/word-pull-up';
 
 function HeroSection() {
   return (
@@ -34,16 +34,18 @@ function HeroSection() {
 
 
         {/* Heading and Description */}
-        <div className="text-center max-w-3xl mx-auto px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold leading-tight text-gray-800">
-            Empowering  <br className="sm:hidden" />
-            <span className="block sm:inline lg:mr-2">Digital Bridges</span>
-            <span className="block sm:inline md:inline">Future <span className='md:hidden'>Technological </span></span>
-          </h1>
-          <p className="text-sm md:text-lg mt-4 text-gray-600">
-            Incubator adalah gerbang Anda untuk menguasai <strong>software engineering</strong>
-            dan menjadi <strong>network administrator</strong> yang terampil. Bergabunglah dengan kami dan bentuk masa depan teknologi.
-          </p>
+        <div className="text-center max-w-5xl mx-auto px-4">
+          <WordPullUp>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-800">
+              Empowering <br className="sm:hidden" />
+              <span className="block sm:inline lg:mr-2">Digital Bridge</span>
+              <span className="block sm:inline md:inline">Future
+                <span className="lg:hidden">Technology</span>
+              </span>
+            </h1>
+          </WordPullUp>
+
+
         </div>
 
 
@@ -51,11 +53,11 @@ function HeroSection() {
 
         {/* Button */}
         <Link href="https://linktr.ee/incubator_stelkmks">
-          <ShinyButton>Media Sosial</ShinyButton>
+          <ShinyButton className='py-2 px-5'>Media Sosial</ShinyButton>
         </Link>
       </div>
 
-    </div>
+    </div >
   );
 }
 
