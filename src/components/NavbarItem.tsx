@@ -51,15 +51,15 @@ const Navbar = () => {
                 onClick={toggleMobileMenu}
               >
                 <span
-                  className={` bg-black block transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm ${mobileMenuOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+                  className={` bg-red-500 block dark:bg-white transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm ${mobileMenuOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
                     }`}
                 ></span>
                 <span
-                  className={`bg-black block transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm my-1 ${mobileMenuOpen ? "opacity-0" : "opacity-100"
+                  className={`bg-red-500 block dark:bg-white transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm my-1 ${mobileMenuOpen ? "opacity-0" : "opacity-100"
                     }`}
                 ></span>
                 <span
-                  className={`bg-black block transition-all duration-300 ease-in-out h-0.5 w-6 rounded-sm ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : "translate-y-0.5"
+                  className={`bg-red-500 block transition-all dark:bg-white duration-300 ease-in-out h-0.5 w-6 rounded-sm ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : "translate-y-0.5"
                     }`}
                 ></span>
               </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
       {mobileMenuOpen && (
         <motion.div
-          className="fixed bottom-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-2xl rounded-t-lg"
+            className="fixed bottom-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-2xl rounded-t-lg"
           initial={{ opacity: 0, y: "100%" }}  // Mulai dengan opacity 0 dan di bawah layar
           animate={{ opacity: 1, y: 0 }}       // Ketika muncul, opacity 1 dan posisi di atas
           exit={{ opacity: 0, y: "100%" }}    // Ketika keluar, opacity 0 dan posisi di bawah

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import iconIncu from "@/app/Assets/Image/pp.jpg";
+import iconIncu from "@/app/Assets/Image/aliak.jpg";
 
 const LoadingAnimation = ({ onComplete = () => {} }) => {
   const [loadingStage, setLoadingStage] = useState('initial');
