@@ -12,6 +12,7 @@ import About from '@/components/About';
 import LoadingAnimation from '@/components/LoadingAnimate';
 import Footer from '@/components/Footer';
 import AboutSection from '@/components/AboutSection';
+import Barcode from '@/components/Barcode';
 function Page() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -50,9 +51,11 @@ function Page() {
           <LogoClouds />
           <Cards />
           <About />
-
           <section>
-          <Footer/>
+            <Barcode />
+          </section>
+          <section>
+            <Footer />
           </section>
         </div>
       )}
